@@ -1,0 +1,87 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+.demo
+{animation-name:demoAnim;
+    animation-duration:3s;
+    animation-iteration-count: infinite; 
+    background-color:white;
+    width:350px;
+    height:450px;
+    /* padding:10px; */
+    border:2px solid #eee;
+    /* box-shadow:1px 1px 10px gray; */
+    overflow:hidden;
+     border-top-left-radius:50px;
+    border-bottom-right-radius:50px;
+    transform:translate(300px,100px);
+    position: relative;
+    }
+.header
+{
+    position:fixed;
+    z-index:10000;
+    width:350px;
+    /* background-image:linear-gradient(to right,red ,blue,green,yellow); */
+    background-color:teal;
+    border-top-left-radius:50px ;
+}
+h1
+{animation-name:headerBack;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    margin:10px;
+    margin-left:110px;
+    color:white;
+    position: relative;
+    /* animation-name:headerAnim;
+    animation-duration:7s;
+    animation-iteration-count:infinite; */
+}
+.pdiv
+{
+    position: relative;
+    animation-name: noticeBoard;
+    animation-duration:8s;
+    animation-iteration-count: infinite;
+}
+.demo p
+{
+margin-left:95px;
+color:black;
+font-size:20px;
+animation-name: demoAnim2;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+}
+.demo:hover
+{
+    box-shadow:1px 1px 10px;
+    cursor: pointer;
+    width:352px;
+    height:455px; 
+    /* transform:scale(1.1,1.1); */
+    transition:0.5s;
+}
+@keyframes demoAnim
+{
+ from{background-color:white;}
+ to{background-color:greenyellow;}
+} 
+@keyframes noticeBoard
+{
+    from{top:450px;}
+    to{top:-550px}
+}
+@keyframes headerAnim
+ {
+    from{left:-350px;}
+    to{left:370px;}
+}
+@keyframes headerBack
+{
+    from{color:white;} 
+    to{ color:brown;}
+}

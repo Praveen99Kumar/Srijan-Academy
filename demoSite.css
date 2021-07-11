@@ -1,0 +1,350 @@
+*{
+    font-family: 'Baloo 2', cursive;
+    margin:0px;
+    padding:0px;
+}
+body{
+     /* background-image:linear-gradient(to right,#004eff,#00e7ff);  */
+      background:url(images/bg.jpg);
+    }
+/* -------------------------------------HEADER---------------------------------------- */
+header{
+    width:100%;
+}
+#myNav{
+    /* display: inline; */
+    /* border:5px solid; */
+    background:#cc646e;
+    height:126px;
+}
+.left{
+    width:18%;
+    /* border:5px solid red; */
+    display:inline-block;
+    margin-top:-32px;
+}
+.left img{
+    width:280px;
+    height:190px;
+    /* border-radius:50%; */
+    margin-left:-8%;
+}
+.mid{
+    width:66%;
+    /* border:5px solid blue; */
+    display:inline-block;
+    /* float: right; */
+    margin-left:-2%;
+}
+.mid ul{
+    list-style-type:none;
+    /* display:block; */
+    display:flex;
+    /* margin-left:20px; */
+    /* align-items:stretch; */
+}
+.mid ul a{
+    text-decoration:none;
+    color:white;
+    font-size:19px;
+}
+.mid ul li{
+    padding:5px;
+    /* border:2px solid green; */
+    border-radius:4px;
+    margin:10px;
+    font-weight: bold;
+}
+.mid ul li:hover{
+    cursor: pointer;
+    background-color: #e4cb14;
+
+}
+.mid ul a:active{
+    color: rgb(211, 6, 33);
+}
+.right{
+    width: 13%;
+    /* border:2px solid white; */
+    border-radius:5px;
+    display: inline-block;
+    float: right;
+    margin-top:42px;
+    padding:5px 24px;
+    margin-right:24px;
+    line-height:0px;
+}
+.right p{
+    font-size:19px;
+    color:white;
+}
+.right i{
+    width:25px;
+}
+.myIcons{
+    margin-top:3px;
+}
+/* -----------------------------------------CENTER------------------------------- */
+#myCenter{
+    height:60vh;
+    width:88%;
+    /* height:656px; */
+    /* height:100vh; */
+    margin:10%;
+}
+.centerText{
+    width:100%;
+    /* border:1px solid; */
+    /* margin: 10% 10%; */
+    /* justify-items: center; */
+    align-items: center;
+}
+#text{
+    /* border:15px solid; */
+    width:76%;
+    color:white;
+    padding:2px;
+    line-height:100px;
+    font-weight: bold;
+    font-size:56px;
+    background: rosybrown;
+    padding:0px 27px;
+    border-radius:15px;
+    box-shadow:5px 5px gray;
+}
+#Text{
+    width:55%;
+    background: teal;
+    color:white;
+    font-size:46px;
+    padding:5px 33px;
+    border-radius:10px;
+    /* float:right; */
+    box-shadow:3px 3px gray;
+}
+.btnBox{
+    /* border:1px solid; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.btnBox button{
+    background-color: rgb(230, 18, 230);
+    width:163px;
+    padding:5px;
+    border-radius:5px;
+    /* line-height: 25px; */
+    margin-top:2%;
+}
+.btnBox button:hover{
+    background-color: gray;
+}
+.btnBox button a
+{
+    text-decoration: none;
+    color:white;
+}
+#btn2{
+    width:30%;
+}
+/* ----------------------------------------------------FOOTER----------------------------------- */
+
+/* .mymap{
+    width:100%;
+    border:3px solid;
+    position:relative;
+     margin:50px 385px; 
+} */
+/* .mymap iframe{
+    align-self: center;
+} */
+#myFooter{
+    background-color:#948484;
+    height:52vh;
+}
+.foot{
+    /* border:3px solid; */
+    text-align: center;
+    height:270px;
+    background-color: #eee;
+    border-radius:5px;
+    padding:5px;
+    margin-top:50px;
+    margin-bottom:20px;
+    box-shadow:-2px -2px 3px 3px rgb(7, 7, 7);
+}
+.container{
+    margin:4% 8%;
+}
+/* --------------------------------------GALLERY----------------------------------------- */
+.myImage{
+    width:345px;
+    height:400px;
+    /* border:3px solid; */
+    text-align: center;
+    border-radius:5px;
+    padding:5px;
+    margin-top:20px;
+    margin-bottom:20px;
+    background-color:yellow;
+    /* box-shadow:-2px -2px 3px 3px rgb(7, 7, 7); */
+}
+/* ------------------------------------ABOUT US----------------------------------------- */
+#aboutSection{
+    height:88vh;
+}
+.About{
+    margin-top:1%;
+}
+#about{
+    /* margin-top:3%; */
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 4.3rem;
+}
+.aboutus{
+    display:flex;
+    /* border:3px solid; */
+    margin-top:4%;
+}
+.aboutus img{
+    margin-left:3%;
+    width:35%;
+    box-shadow: -2px -2px 3px 3px #0000005c;
+}
+.aboutus p{
+    text-align: center;
+    margin:6% 5%;
+    font-size:1.3rem;
+}
+/* ------------------------------------------TOPPERS---------------------------------- */
+#topperSection{
+    height: 95vh;
+}
+#toppersHeading{
+    text-align: center;
+    font-weight: bold;
+    font-size:4rem;
+    margin:3%;
+    color: white;
+}
+.toppers{
+    box-shadow:-2px -2px 3px 3px #00000052;
+    background-color: white;
+    border-radius:10px;
+}
+.toppers h1{
+    text-align: center;
+    font-weight: bold;
+}
+@media screen and (max-width:1100px)
+ {
+     #myHome{
+        /* height:900px; */
+        height: auto;
+     }
+     .left{
+         width:100%;
+         margin:2px,3px;
+     }
+     .mid{
+         width:100%;
+     }
+    .mid ul{
+        width:100%;
+        display: block;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mid ul li{
+        width:100%;
+    }
+    .mid ul a{
+        color: blue;
+    }
+    .right{
+        display: none;
+    }
+    .leftBox img{
+        width:100%;
+    }
+    #myCenter{
+        margin:6%;
+        margin-bottom:-70%;
+    }
+    .centerText{
+        width: 100%;
+        margin-top:140%;
+    }
+    #text{
+        font-size:20px;
+        line-height:36px;
+        width:100%;
+        text-align: center;
+    }
+    #Text{
+        font-size:21px;
+        line-height:28px;
+        width:100%;
+        text-align: center;
+    }
+    .btnBox{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    } 
+    #btn2{
+        width:51%;
+    }
+    .container{
+        /* margin-top:-31px; */
+        margin-top:-10px;
+        display: flex;
+        flex-direction: column;
+        margin:4% 0%;
+    }
+    .About{
+        margin-top:122%;
+    }
+    .aboutus{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutus img{
+        width:100%;
+        margin-left:0%;
+    }
+    #gallerySection{
+        margin-top:120%;
+    }
+    #toppersHeading{
+        margin: 8%;
+    }
+    #topperSection{
+        margin-top:125%;
+    }
+    #facultySection{
+        margin-top:125%;
+    }
+    /* #fcultyContainer{
+        margin: 1% 8%;
+    } */
+    #facultyFooter{
+        margin-top:10%;
+        background-color:#948484;
+        height:135vh;
+    }
+    #myFooter{
+        margin-top:6%;
+        height:135vh;
+    }
+    #topperFooter{
+        background-color:#948484;
+        margin-top:220%;
+        height:135vh;
+    }
+
+}
